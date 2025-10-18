@@ -1,0 +1,51 @@
+# Pink & Purple GUI Calculator
+
+A stylish and functional basic calculator application built with **Python** and its standard GUI library, **Tkinter**. This project features a unique dark purple and vibrant pink color scheme, offering a sleek, modern look.
+
+# Features
+
+* **Basic Arithmetic Operations:** Perform addition, subtraction, multiplication, and division.
+* **Aesthetic Design:** A custom design using dark purple for the background and buttons, contrasted with a vivid pink for operators (`+`, `-`, `*`, `/`, `=`) and clear button.
+* **Intuitive Interface:** A clean grid layout using the `grid()` geometry manager for organized button placement.
+* **Error Handling:** Displays "Error" for invalid operations (e.g., division by zero).
+
+# Preview
+
+*(When you upload your code to GitHub, you should include a screenshot of your running calculator here. Example: `![Calculator Preview](calculator_screenshot.png)`)*
+
+# Getting Started
+
+
+### Installation and Run
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    cd YOUR_REPO_NAME
+    ```
+
+2.  **Run the application:**
+    ```bash
+    python calculator.py 
+    # (Or whatever you named your Python file, e.g., "hesap_makinesi.py")
+    ```
+
+The calculator GUI window will open, ready for use!
+
+# Project Structure
+
+The project consists of a single Python file:
+
+* `calculator.py` (or your file name): Contains all the Tkinter GUI setup, button creation, and core logic for handling calculations using Python's `eval()` function.
+
+# How It Works
+
+The application logic is straightforward:
+
+1.  **`tkinter` Import:** The GUI is created using the standard `tkinter` library.
+2.  **`StringVar`:** A `StringVar` (`ekran_degeri` in the code) is used to dynamically update the display field as buttons are clicked.
+3.  **`tus_bas(deger)`:** Appends the clicked number or operator to the global `ifade` string.
+4.  **`hesapla()`:** Uses the safe and powerful `eval()` function to calculate the result of the `ifade` string. Includes a basic `try...except` block to catch and display "Error" for invalid expressions.
+5.  **`grid()` Manager:** All buttons are placed efficiently using Tkinter's `grid()` layout manager, ensuring a responsive and clean design.
+
+
